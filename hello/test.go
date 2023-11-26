@@ -1,7 +1,23 @@
+// Golang program to demonstrate the declaration
+// and initialization of pointers
 package main
 
-import "fmt"   //~/Go test/hello$ go mod init hello   to run go run .
+import "fmt"
 
 func main() {
-	fmt.Println("Hello")
+
+	// taking a normal variable
+	var x int = 5748
+	
+	// declaration of pointer
+	var p *int
+	
+	// initialization of pointer
+	p = &x //address is save to the p
+
+		// displaying the result
+	fmt.Println("Value stored in x = ", x)
+	fmt.Println("Address of x = ", &x)
+	fmt.Println("Value stored in variable p = ", p)
+	fmt.Println("Value stored in variable p = ", *p)
 }
